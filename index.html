@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Allergy Buddy – Legal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+    }
+    .container {
+      background: white;
+      padding: 2.5rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #005a87;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    p {
+      color: #555;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #0078b4;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-weight: 600;
+      margin: 0 0.5rem 1rem 0.5rem;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,120,180,0.3);
+    }
+    a.button:hover {
+      background-color: #005a87;
+      box-shadow: 0 6px 16px rgba(0,90,135,0.4);
+    }
+    @media (max-width: 420px) {
+      .container {
+        padding: 2rem 1.5rem;
+      }
+      a.button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+        margin: 0.4rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Allergy Buddy Legal Pages</h1>
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms and Conditions</a></li>
-  </ul>
+  <div class="container">
+    <h1>Welcome to My Allergy Buddy Legal Pages</h1>
+    <p>Please review our important policies before using the app.</p>
+    <div>
+      <a href="privacy.html" class="button" aria-label="View Privacy Policy">Privacy Policy</a>
+      <a href="terms.html" class="button" aria-label="View Terms and Conditions">Terms &amp; Conditions</a>
+    </div>
+  </div>
 </body>
 </html>
